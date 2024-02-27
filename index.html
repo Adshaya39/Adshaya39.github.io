@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class=profile><img src="img/profile.jpg" alt="Profile Picture"></div>
+        <div class="aboutme">
+        <p>
+            Hi, I'm Adshaya Marimuthu, a passionate and enthusiastic software developer with a keen interest in creating beautiful, functional, and user-friendly websites. With a background in Computer Science Engineering, I bring 10 months of experience in software development.
+        </p>
+        <p>
+            My journey into software development began 1 year ago when I discovered my fascination for turning ideas into digital experiences. Since then, I've been continuously learning and honing my skills in HTML, CSS, JavaScript, C and Java and Java frameworks and technologies.
+        </p>
+        <p>
+            I love tackling challenges and solving problems creatively. Whether it's crafting pixel-perfect designs, optimizing program performance, or implementing complex functionalities, I strive for excellence in every project I Undertake.
+        </p>
+        <p>
+            Outside of coding, you can find me exploring the latest trends in technologies or enjoying the great. I'm also a author in wattpad and video editor.
+        </p>
+        <p>
+            I'm excited about the opportunity to collaborate on innovative projects, contribute my expertise to impactful initiatives, and continue pushing the boundaries of software development. Let's connect and bring your ideas to life!
+        </p>
+        <!-- Download Resume-->
+        <p>Click the button below to download my resume:</p>
+        <a href="https://drive.google.com/drive/folders/1IZGgQlM3YeLHbl2mEi4D3ZZHwszkkeR2?usp=sharing" download="Adshaya_Resume.pdf" class="btn">Download Resume</a>
+        </div>
+
+    </section>
+
+
+    
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="img/project1.jpg" alt="Project 1">
+            <p><h3>&nbsp;Hospital Management System Using Spring Boot</h3>
+                &nbsp;I worked on the development team for a hospital management system that included 
+                hospital branches, address, patient’s history of medical records, medical items and medical orders 
+                details modules.<br>&nbsp;The system helped users keep track of patients and their encounter and provided 
+                reports and medical details formats based on selected criteria.</p><br>
+       
+            <img src="img/project2.jpg" alt="Project 2">
+            <h3>&nbsp;Automatic Pesticide Suggestion Using Deep Learning</h3>
+            <p>&nbsp;Developed a system that capable to detect and identify the type of disease based on the 
+            visible patterns on leaves and suggest appropriate pesticide for the identified disease.
+            </p><br>
+        
+            <img src="img/project3.jpg" alt="Project 3">
+            <h3>&nbsp;To Unlock Devices Using Face Recognition</h3>
+            <p>&nbsp;Developed a software to recognize the face of the user to open the system.</p>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Hibernate</li>
+            <li>Data Structures</li>
+            <li>C</li>
+            <li>BIOS/UEFI</li> 
+        </ul>
+    </section>
+
+    <!-- job experiences -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Software Developer</h3>
+            <p>AMI, July 2022 - April 2023</p>
+            <p><h4>PROJECT: Aptio V Payload</h4> <ul>
+                <li>Import UEFI Payload on the Aptio V Project Tree</li>
+                <li>R&D on Integrate UEFI Payload into coreboot</li></p>
+        </div>
+    </section>
+
+    <!-- degrees or certifications -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="degree">
+            <h3>Bachelor of Engineering in Computer Science</h3>
+            <p>Kamaraj College of Engineering and Technology, 2022, CGPA -> 8.23</p>
+        </div>
+        <div class="certifications">
+            <h3>Java Full Stack Developer</h3>
+            <p>Qspiders, 2023</p>
+        </div>
+    </section>
+
+    <!-- contact me -->        
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Interested in working together or have any questions? Feel free to reach out to me using the form below or via email.</p>
+            <form id="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-details">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> adshayam2018@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9344629252</p>
+            <p><strong>Address:</strong> 62G/11A, Bala Vinayakar Kovil Street, Muhavoor-626188.</p>
+            <p><strong>Social Media:</strong> Connect with me on <a href="https://www.linkedin.com/in/adshayamarimuthu/">LinkedIn</a>, and <a href="https://github.com/Adshaya39">GitHub</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+ 
+</body>
+</html>
